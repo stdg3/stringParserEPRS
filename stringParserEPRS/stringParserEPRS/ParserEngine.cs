@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace stringParserEPRS
+﻿namespace stringParserEPRS
 {
     public class ParserEngine
     {
@@ -19,19 +13,22 @@ namespace stringParserEPRS
         private DateOnly GetDate(string _rawData)
         {
             var splittedDate = _rawData.Split('-');
+            if (splittedDate.Length != 3)
+            {
+                return new DateOnly();
+            }
+
             splittedDate[2] = splittedDate[2].Substring(0, 4);
 
-            for (int i = 0; i < splittedDate.Length; i++)
+            foreach (var item in splittedDate)
             {
-                if (splittedDate[i].Length == 1)
-                {
-                    splittedDate[i] = $"0{splittedDate[i]}";
-                }
+                var isNumeric = int.TryParse(item, out int n);
+                if (!isNumeric)
+                    return new DateOnly();
             }
 
             string strDate = $"{splittedDate[0]}/{splittedDate[1]}/{splittedDate[2]}";
-            DateOnly dt;
-            var isValidate = DateOnly.TryParse(strDate, out dt);
+            var isValidate = DateOnly.TryParse(strDate, out DateOnly dt);
             if (isValidate)
                 return dt;
             else
@@ -46,7 +43,6 @@ namespace stringParserEPRS
             // if file has any 1 char after . and have .
             if (dotPosition + 1 >= _rawData.Length || dotPosition < 0)
             {
-                //_result.Add("");
                 return "";
             }
             string extRes = _rawData.Substring(dotPosition, extLength);
