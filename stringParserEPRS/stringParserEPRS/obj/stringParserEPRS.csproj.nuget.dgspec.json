@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avelicoglo\\Desktop\\internProjects\\asp6Denemeler\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj": {}
+    "C:\\Users\\avelicoglo\\Desktop\\sapec\\proj\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avelicoglo\\Desktop\\internProjects\\asp6Denemeler\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj": {
+    "C:\\Users\\avelicoglo\\Desktop\\sapec\\proj\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avelicoglo\\Desktop\\internProjects\\asp6Denemeler\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj",
+        "projectUniqueName": "C:\\Users\\avelicoglo\\Desktop\\sapec\\proj\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj",
         "projectName": "stringParserEPRS",
-        "projectPath": "C:\\Users\\avelicoglo\\Desktop\\internProjects\\asp6Denemeler\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj",
+        "projectPath": "C:\\Users\\avelicoglo\\Desktop\\sapec\\proj\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS.csproj",
         "packagesPath": "C:\\Users\\avelicoglo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avelicoglo\\Desktop\\internProjects\\asp6Denemeler\\stringParserEPRS\\stringParserEPRS\\obj\\",
+        "outputPath": "C:\\Users\\avelicoglo\\Desktop\\sapec\\proj\\stringParserEPRS\\stringParserEPRS\\stringParserEPRS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

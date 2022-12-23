@@ -8,7 +8,7 @@ namespace stringParserEPRS
 {
     public class ParserEngine
     {
-        public (DateOnly, string) Parse(string _rawData)
+        public (DateOnly FileDate, string FileExt) Parse(string _rawData)
         {
             var date = GetDate(_rawData);
             var ext = GetExt(_rawData);
